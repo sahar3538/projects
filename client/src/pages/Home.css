@@ -1,0 +1,138 @@
+.about-section, .products-section {
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 30px;
+  transition: all 0.5s ease;
+  margin: 20px 0; /* Removed auto to eliminate side spacing */
+  width: 100%;    /* Make sections stretch full width */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.about-section h2, .products-section h2 {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.about-section p, .products-section p {
+  text-align: center;
+  line-height: 1.6;
+  color: #333;
+}
+
+/* Product Grid Layout */
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 equal columns */
+  grid-template-rows: repeat(2, auto);  /* 2 rows */
+  gap: 20px;
+  padding: 20px;
+  width: 100%;
+}
+
+.product-card {
+  border: 1px solid #ddd;
+  border-radius: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  transition: transform 0.3s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+}
+
+.product-image {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.product-price {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.rent-button, .features-button {
+  background-color: #000;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.rent-button:hover, .features-button:hover {
+  background-color: #333;
+}
+
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.about-section {
+  display: flex;
+  flex-direction: column; /* Stack elements vertically */
+  align-items: flex-end; /* Align to the right */
+  justify-content: top; /* Center content vertically */
+  background: url('../assets/bg.png') no-repeat center center/cover;
+  height: 80vh;
+  width: 100%;
+  position: relative;
+  padding-top: 50px; /* Adjust padding for better spacing */
+  border-radius:0%;
+
+}
+
+.about-content {
+  position: relative;
+  color:white;
+  max-width: 50%;
+  text-align: right;
+  z-index: 2;
+}
+
+.about-section h2 {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 10px; /* Adds space between heading and text */
+}
+
+.about-section p {
+  color:white;
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
+
+.contact-section {
+  background: linear-gradient(to right, #660000, #000); /* Dark Red to Black */
+  color: white;
+  padding: 40px 15px; /* Adjusted padding */
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+.contact-content {
+  max-width: 500px; /* Keep it compact */
+  margin: auto;
+}
+
+.contact-content h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.contact-content p {
+  font-size: 1.1rem;
+  line-height: 1.5; /* Better spacing */
+  margin-bottom: 10px;
+}
